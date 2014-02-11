@@ -253,7 +253,7 @@ class Builder extends \Illuminate\Database\Query\Builder {
         {
             // Replace possible dots in subdocument queries with underscores
             $key = str_replace('.', '_', $columns[0]);
-            return $results[0][$key];
+            return $results;
         }
     }
 
